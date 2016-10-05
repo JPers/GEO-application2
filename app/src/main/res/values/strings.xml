@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">GEO-application</string>
+    <string name="title_activity_report">report</string>
+
+    <string name="country_prompt">Välj problem</string>
+
+    <string-array name="country_arrays">
+        <item>Välj problem..</item>
+        <item>Vägskada</item>
+        <item>Vandalisering</item>
+        <item>Klotter</item>
+        <item>Ljussättning</item>
+        <item>Vattenskada</item>
+        <item>Trafik</item>
+        <item>Övrigt</item>
+    </string-array>
+
+    <string name="choice"> default</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="title_activity_receipt">ReceiptActivity</string>
+    <string name="title_activity_help">HelpActivity</string>
+    <string name="title_activity_sent">SentActivity</string>
+
+
+</resources>
