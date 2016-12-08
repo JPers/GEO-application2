@@ -84,16 +84,6 @@
         android:layout_marginStart="23dp" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Anmäl problem"
-        android:id="@+id/textView"
-        android:textSize="35dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
-
-    <TextView
         android:text="TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -106,12 +96,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Bild:"
-        android:id="@+id/textView4"
-        android:layout_marginBottom="12dp"
-        android:layout_above="@+id/button8"
-        android:layout_alignParentStart="true"
-        android:layout_toStartOf="@+id/buttonPicture" />
+        android:text="Anmäl problem"
+        android:id="@+id/textView"
+        android:textSize="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -120,8 +109,7 @@
         android:text="Beskrivning:"
         android:id="@+id/textView3"
         android:layout_below="@+id/problem"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="47dp" />
+        android:layout_toEndOf="@+id/button8" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -129,9 +117,8 @@
         android:id="@+id/editText"
         android:hint="Beskriv ditt problem.."
         android:textSize="20sp"
-        android:layout_alignBaseline="@+id/textView3"
-        android:layout_alignBottom="@+id/textView3"
-        android:layout_toEndOf="@+id/textView3" />
+        android:layout_below="@+id/problem"
+        android:layout_alignStart="@+id/problem" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -139,9 +126,17 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Plats:"
         android:id="@+id/textView5"
-        android:layout_centerVertical="true"
-        android:layout_alignParentStart="true"
-        android:layout_toStartOf="@+id/my_location" />
+        android:layout_above="@+id/button8"
+        android:layout_toEndOf="@+id/button8" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Bild:"
+        android:id="@+id/textView4"
+        android:layout_above="@+id/textView9"
+        android:layout_toEndOf="@+id/button8" />
 
 
 </RelativeLayout>
