@@ -16,26 +16,6 @@
     <Button
         android:layout_width="75dp"
         android:layout_height="75dp"
-        android:id="@+id/button"
-        android:background="@android:drawable/ic_menu_send"
-        android:layout_above="@+id/textView13"
-        android:layout_alignParentEnd="true"
-        android:onClick="next" />
-
-    <TextView
-        android:text="Nästa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView13"
-        android:textSize="17dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/button"
-        android:layout_marginStart="11dp"
-        android:layout_alignParentEnd="true" />
-
-    <Button
-        android:layout_width="75dp"
-        android:layout_height="75dp"
         android:id="@+id/button8"
         android:background="@android:drawable/ic_menu_revert"
         android:onClick="exit"
@@ -53,36 +33,6 @@
         android:layout_marginStart="14dp"
         android:layout_alignEnd="@+id/button8" />
 
-    <Button
-
-        android:id="@+id/buttonPicture"
-        android:background="@android:drawable/ic_menu_camera"
-        android:layout_height="50dp"
-        android:layout_width="50dp"
-        android:layout_alignBaseline="@+id/textView4"
-        android:layout_alignBottom="@+id/textView4"
-        android:layout_alignStart="@+id/editText" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/my_location"
-        android:hint="Min plats.."
-        android:textSize="20sp"
-        android:layout_alignStart="@+id/buttonPicture"
-        android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/textView5"
-        android:layout_above="@+id/textView4" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@mipmap/ic_launcher"
-        android:id="@+id/picuteview"
-        android:layout_alignTop="@+id/buttonPicture"
-        android:layout_toEndOf="@+id/buttonPicture"
-        android:layout_marginStart="23dp" />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -94,24 +44,13 @@
         android:layout_centerHorizontal="true" />
 
     <TextView
-        android:text="TextView"
+        android:text='"Valt problem"'
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/problem"
         android:textSize="20sp"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Bild:"
-        android:id="@+id/textView4"
-        android:layout_marginBottom="12dp"
-        android:layout_above="@+id/button8"
-        android:layout_alignParentStart="true"
-        android:layout_toStartOf="@+id/buttonPicture" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -126,7 +65,7 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editText"
+        android:id="@+id/anteckningar"
         android:hint="Beskriv ditt problem.."
         android:textSize="20sp"
         android:layout_alignBaseline="@+id/textView3"
@@ -141,7 +80,62 @@
         android:id="@+id/textView5"
         android:layout_centerVertical="true"
         android:layout_alignParentStart="true"
-        android:layout_toStartOf="@+id/my_location" />
+        android:layout_toStartOf="@+id/myLocationText" />
+
+    <Button
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/btnSubmit"
+        android:background="@android:drawable/ic_menu_send"
+        android:layout_above="@+id/textView13"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Skicka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView13"
+        android:textSize="17dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/anteckningar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/myLocationText"
+        android:textSize="20sp"
+        android:hint="Din nuvarande plats"
+        android:layout_alignStart="@+id/anteckningar"
+        android:layout_above="@+id/picuteview"
+        android:layout_alignEnd="@+id/anteckningar"
+        android:layout_alignTop="@+id/textView5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Bild:"
+        android:id="@+id/textView4"
+        android:layout_above="@+id/button8"
+        android:layout_alignParentStart="true" />
+
+    <Button
+
+        android:id="@+id/buttonPicture"
+        android:background="@android:drawable/ic_menu_camera"
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignStart="@+id/myLocationText" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:id="@+id/picuteview"
+        android:layout_alignTop="@+id/buttonPicture"
+        android:layout_alignEnd="@+id/problem" />
 
 
 </RelativeLayout>

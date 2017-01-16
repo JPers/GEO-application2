@@ -57,7 +57,7 @@
         android:layout_alignParentStart="true" />
 
     <TextView
-        android:text="För att göra anmälan krävs att du är på platsen felet finns då appen hämtar din nuvarande position."
+        android:text="För att göra anmälan krävs att du är på platsen felet finns då appen hämtar din nuvarande position. Därmed så accepterar du att vi använder din position för att lokalisera skadan när du använder applikationen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"

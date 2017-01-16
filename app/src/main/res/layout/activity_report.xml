@@ -6,25 +6,27 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     tools:context="com.example.grand.geo_application.ReportActivity">
+
+    <include layout="@layout/content_report"
+        android:layout_width="match_parent" />
+
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme.AppBarOverlay">
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="#E0E4CC"
-        app:popupTheme="@style/AppTheme.PopupOverlay"
-        app:title=" "
-        android:keepScreenOn="false"
-        android:elevation="0dp" />
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#E0E4CC"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title=" "
+            android:keepScreenOn="false"
+            android:elevation="0dp" />
 
 
     </android.support.design.widget.AppBarLayout>
-
-    <include layout="@layout/content_report" />
 
 
 </android.support.design.widget.CoordinatorLayout>

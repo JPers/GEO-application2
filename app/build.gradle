@@ -30,4 +30,5 @@ dependencies {
     compile 'com.android.support:appcompat-v7:24.2.1'
     compile 'com.android.support:design:24.2.1'
     compile 'com.esri.arcgis.android:arcgis-android:10.2.8-1'
+    compile 'com.android.volley:volley:1.0.0'
 }
