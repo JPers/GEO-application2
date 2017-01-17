@@ -130,12 +130,12 @@
         android:layout_alignStart="@+id/myLocationText" />
 
     <ImageView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:srcCompat="@mipmap/ic_launcher"
-        android:id="@+id/picuteview"
+        android:id="@+id/imageView"
         android:layout_alignTop="@+id/buttonPicture"
-        android:layout_alignEnd="@+id/problem" />
+        android:layout_toEndOf="@+id/button8" />
 
 
 </RelativeLayout>

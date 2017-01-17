@@ -9,18 +9,19 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 
 public class SentActivity extends AppCompatActivity {
-
+//här börjar OnCreate-metoden
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sent);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+//här slutar OnCreate-metoden
     }
 
 
 
+//funktion för att ta användaren tillbaka till startsidan
     public void exit(View view) {
 
         Intent intent = new Intent(this, MainActivity.class);

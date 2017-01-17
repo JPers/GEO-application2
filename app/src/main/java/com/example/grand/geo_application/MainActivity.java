@@ -17,10 +17,11 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 public class MainActivity extends Activity {
-
+    //menyn vid startsidan
     public Spinner spinner1;
     public Button btnSubmit;
 
+    //metod för att ta oss till sidan för att rapportera
     public void report(View view) {
 
         Intent intent = new Intent(this, ReportActivity.class);
@@ -30,7 +31,7 @@ public class MainActivity extends Activity {
 
 
     }
-
+    //metod för att ta os till hjälpsidan
     public void help(View view) {
 
         Intent intent = new Intent(this, HelpActivity.class);
@@ -38,14 +39,16 @@ public class MainActivity extends Activity {
         startActivity(intent);
         finish(); // Call once you redirect to another activity
     }
-
+    //här börjar oncreate-metoden
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         addListenerOnButton();
         addListenerOnSpinnerItemSelection();
+    //här slutar oncreate-metoden
     }
+
 
     public void addListenerOnSpinnerItemSelection() {
         spinner1 = (Spinner) findViewById(R.id.spinner1);
